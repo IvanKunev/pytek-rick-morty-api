@@ -1,0 +1,1 @@
+# pytek-rick-morty-api
