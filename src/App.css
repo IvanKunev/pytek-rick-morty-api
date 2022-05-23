@@ -1,7 +1,17 @@
+.container {
+    background: rgb(36, 40, 47);
+    min-width: 100%
+}
+
 .text-center {
     margin-top: 20px;
     color: rgb(32, 35, 41);
     font-weight: 900;
     z-index: 1;
     font-size: 5.625rem;
+}
+
+.card-section{
+    display: flex;
+    flex-wrap: wrap;
 }
