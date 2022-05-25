@@ -8,7 +8,7 @@ function App() {
   const [page, setPage] = useState('1')
   const [characterData, setCharacterData] = useState([])
   const { info , results} = characterData
-  
+
   const api = `https://rickandmortyapi.com/api/character/?page=${page}`
   
   useEffect(() => {
@@ -27,8 +27,7 @@ function App() {
           <div className='col-2'><Filters/></div>
           <div className='col-10'>
             <div className='row card-section'>
-            <CharacterCard/>
-            <CharacterCard/>
+            <CharacterCard results={results}/>
             </div>
           </div>
         </div>
