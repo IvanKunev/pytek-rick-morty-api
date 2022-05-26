@@ -7,6 +7,7 @@ import CharacterCard from './components/CharacterCard/CharacterCard'
 function App() {
   const [page, setPage] = useState('1')
   const [characterData, setCharacterData] = useState([])
+
   const { info , results} = characterData
 
   const api = `https://rickandmortyapi.com/api/character/?page=${page}`

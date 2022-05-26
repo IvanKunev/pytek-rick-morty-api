@@ -6,9 +6,9 @@ function CharacterCard({ results }) {
 
     if (results) {
         show = results.map(item => {
-            const { id, name, image } = item
+            const { id, name, image, location, status, species } = item
         return ( 
-            <div key={id} className='col-5'>
+            <div key={id} className='col-5 position-relative'>
                 <article className='main-container'>
                     <div className='img-wrapper'>
                         <img src={image} alt='' className='img-fluid' />
@@ -17,15 +17,31 @@ function CharacterCard({ results }) {
                     <div className='content'>
                         <div className='section'>
                             <span className='name'>{name}</span>
-                            <span>alive</span>
+                            <div>
+                            {(() => {
+                                if(status === 'Alive') {
+                                    return (
+                                        <div className='badge bg-success sub-text'>{status}</div>
+                                    )
+                                } else if(status === 'Dead') {
+                                    return (
+                                        <div className='badge bg-danger sub-text'>{status}</div>
+                                    )
+                                } else {
+                                    return (
+                                        <div className='badge bg-secondary sub-text'>{status}</div>
+                                    )
+                                }
+                            })()}<span className='species'>  -   {species}</span>
+                            </div>
                         </div>
                         <div className='section'>
                             <span className='text'>Last known location:</span>
-                            <span>Place</span>
+                            <span className='sub-text'>{location.name}</span>
                         </div>
                         <div className='section'>
                             <span className='text'>First seen in:</span>
-                            <span>Place</span>
+                            <span className='sub-text'>Place</span>
                         </div>
                     </div>
                 </article>
