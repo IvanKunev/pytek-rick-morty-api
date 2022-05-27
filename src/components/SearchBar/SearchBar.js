@@ -1,8 +1,18 @@
 import React from 'react'
+import './SearchBar.css'
 
-function SearchBar() {
+function SearchBar({ setSearch, setPage }) { 
   return (
-    <div>SearchBar</div>
+    <form className='form-search '>
+      <input onChange={(search) => {
+         setPage(1)
+         setSearch(search.target.value)}} 
+         type='text'
+         placeholder='Search Characters' 
+         className='input-search' 
+         />
+      <button onClick={(click) => {click.preventDefault()}} className='btn-search'>Search</button>
+    </form>
   )
 }
 
