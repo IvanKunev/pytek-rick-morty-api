@@ -48,7 +48,7 @@ function CharacterCard({ results }) {
             </div>
         )})
     } else {
-        show = 'No Characters Found!'
+        show = <span className='no-char'>There Is No Characters Found Whit This Name!</span>
     }
   return <>{show}</>
 }
