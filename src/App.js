@@ -3,6 +3,7 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Filters from './components/Filters/Filters'
 import CharacterCard from './components/CharacterCard/CharacterCard'
+import Pagination from './components/Pagination/Pagination'
 
 function App() {
   const [page, setPage] = useState('1')
@@ -33,6 +34,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Pagination info={info} page={page} setPage={setPage}/>
     </div>
   )
 }
