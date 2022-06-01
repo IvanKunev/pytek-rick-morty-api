@@ -1,0 +1,22 @@
+.accordion-item{
+    color: white;
+    font-weight: 700;
+    text-decoration: none !important;
+}
+
+.accordion-button{
+    background: rgb(60, 62, 68);
+    color: white;
+    font-weight: 700;
+}
+.accordion-button:not(.collapse){
+    background: rgb(60, 62, 68);
+    color: white;
+    font-weight: 700;
+}
+.accordion-button:focus{
+    color: white;
+}
+.accordion-button:after{
+    color: white;
+}

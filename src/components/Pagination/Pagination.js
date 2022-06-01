@@ -4,6 +4,7 @@ import './Pagination.css'
 import ReactPaginate from 'react-paginate'
 
 function Pagination({ page, setPage, info }) {
+  const maxPages = Math.ceil(info?.pages)
 
   return <ReactPaginate 
     className='pagination gap-2'
@@ -15,7 +16,7 @@ function Pagination({ page, setPage, info }) {
     nextClassName='next'
     nextLinkClassName='next-label' 
     previousLinkClassName='prev-label' 
-    pageCount={info?.pages}
+    pageCount={maxPages}
     onPageChange={(pageNumber) => {
         setPage(pageNumber.selected + 1)
     }}

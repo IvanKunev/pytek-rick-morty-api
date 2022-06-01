@@ -10,10 +10,13 @@ function App() {
   const [page, setPage] = useState('1')
   const [characterData, setCharacterData] = useState([])
   const [search, setSearch] = useState('')
+  const [species, setSpecies] = useState('')
+  const [status, setStatus] = useState('')
+  const [gender, setGender] = useState('')
 
   const { info , results} = characterData
 
-  const api = `https://rickandmortyapi.com/api/character/?page=${page}&name=${search}`
+  const api = `https://rickandmortyapi.com/api/character/?page=${page}&name=${search}&species=${species}&status=${status}&gender=${gender}`
   
   useEffect(() => {
     (async function() {
@@ -29,7 +32,7 @@ function App() {
       <SearchBar setSearch={setSearch} setPage={setPage} />
       <div className='container'>
         <div className='row'>
-          <div className='col-2'><Filters/></div>
+          <Filters setSpecies={setSpecies} setStatus={setStatus} setPage={setPage} setGender={setGender}/>
           <div className='col-10'>
             <div className='row card-section'>
             <CharacterCard results={results}/>
