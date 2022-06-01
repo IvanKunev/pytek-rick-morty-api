@@ -8,6 +8,7 @@
     margin: 0.75rem;
     box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
 }
+
 .img-wrapper {
     flex: 2 1 0%;
     width: 100%;
@@ -63,5 +64,5 @@
     font-size: 1.5rem;
     font-weight: 900;
     padding-top: 5%;
-    margin-left: 18%;
+    margin-left: 24%;
 }

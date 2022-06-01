@@ -1,0 +1,17 @@
+.form-check{
+    color: white;
+    font-weight: 700;
+    text-decoration: none !important;
+}
+.form-check-input {
+    background-color: rgb(36, 40, 47);
+    box-shadow: rgba(251, 126, 2, 0.221) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+}
+.form-check-input:checked {
+    background-color: rgb(36, 40, 47);
+    box-shadow: rgba(251, 126, 2, 0.221) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+}
+
+.form-check-input:focus {
+    border-color:rgb(251, 143, 2) !important;
+}

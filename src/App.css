@@ -1,6 +1,7 @@
 .container {
     background: rgb(36, 40, 47);
-    min-width: 100%
+    min-width: 100%;
+    padding-left: 2% !important;
 }
 
 .text-center {
@@ -11,7 +12,7 @@
     font-size: 5.625rem;
 }
 
-.card-section{
-    display: flex;
-    flex-wrap: wrap;
-}
+/* .card-section{
+    
+
+} */

@@ -8,7 +8,7 @@ function CharacterCard({ results }) {
         show = results.map(item => {
             const { id, name, image, location, status, species } = item
         return ( 
-            <div key={id} className='col-5 position-relative'>
+            <div key={id} className='col-5'>
                 <article className='main-container'>
                     <div className='img-wrapper'>
                         <img src={image} alt='' className='img-fluid' />
@@ -48,7 +48,7 @@ function CharacterCard({ results }) {
             </div>
         )})
     } else {
-        show = <span className='no-char'>There Is No Characters Found Whit This Name!</span>
+        show = <span className='no-char'>There Is No Characters Found!</span>
     }
   return <>{show}</>
 }
