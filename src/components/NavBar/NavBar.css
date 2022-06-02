@@ -1,0 +1,26 @@
+.nav-list {
+    list-style: none;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: end;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-item{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 800;
+    cursor: pointer;
+    color: rgb(32, 35, 41);
+    margin-right: 0.3rem;
+    padding: 0px 1.5rem;
+}
+.nav-item:hover{
+    color: rgb(255, 152, 0);
+}
+.active{
+    color: rgb(255, 152, 0);
+}

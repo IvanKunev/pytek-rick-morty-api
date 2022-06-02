@@ -3,15 +3,16 @@
     min-width: 100%;
     padding-left: 2% !important;
 }
-
-.text-center {
-    margin-top: 20px;
+.Title {
+    margin: 0px;
     color: rgb(32, 35, 41);
+    border: none;
     font-weight: 900;
     z-index: 1;
     font-size: 5.625rem;
+    justify-content: center;
+    display: flex;
 }
-
 /* .card-section{
     
 
