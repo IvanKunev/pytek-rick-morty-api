@@ -1,0 +1,16 @@
+.form-select {
+    color: white;
+    background: none;
+    background: rgb(60, 62, 68);
+    font-weight: 700;
+    border-radius: 0.5rem;
+    border: none;
+}
+.selected {
+    color: white;
+    background: none;
+    background: rgb(60, 62, 68);
+    font-weight: 700;
+    border-radius: 0.5rem;
+    border: none;
+}
