@@ -6,7 +6,7 @@ function CharacterCard({ results }) {
 
     if (results) {
         show = results.map(item => {
-            const { id, name, image, location, status, species } = item
+            const { id, name, image, location, status, species, origin } = item
         return ( 
             <div key={id} className='col-5'>
                 <article className='main-container'>
@@ -41,7 +41,7 @@ function CharacterCard({ results }) {
                         </div>
                         <div className='section'>
                             <span className='text'>First seen in:</span>
-                            <span className='sub-text'>Place</span>
+                            <span className='sub-text'>{origin.name}</span>
                         </div>
                     </div>
                 </article>

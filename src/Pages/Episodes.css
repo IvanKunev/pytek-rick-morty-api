@@ -1,0 +1,21 @@
+.ep{
+    display: flex;
+}
+.text {
+    color: rgb(158, 158, 158);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.ep-span{
+    color: white;
+    margin-left: 0.3rem;
+    font-size: 1.2rem;
+}
+.episodes{
+    display: flex;
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    justify-content: center;
+    margin-bottom: 0.3rem;
+}
